@@ -15,6 +15,11 @@ public class PruebaAritmetica {
         resultado = aritmetica1.sumarConArgumentos(5, 8);
         System.out.println("resultado usando argumentos = " + resultado);
         
+        //Definir variables locales
+        //Var solo se puede usar con variables locales.No con atributos de clase
+        var a = 10;
+        var b = 2;
+        miMetodo();
         //Usando constructor vacio
         Aritmetica aritmetica2 = new Aritmetica();
         //Imprimir atributos de nuestra instancia
@@ -26,5 +31,12 @@ public class PruebaAritmetica {
         System.out.println("aritmetica3 a: " + aritmetica3.a);
         System.out.println("aritmetica3 b: " + aritmetica3.b);
         
+    }
+    //Para que pueda ser llamado por main tiene que ser static
+    public static void miMetodo(){
+        //La variable a creada enmain se destruye al finalizar el metodo
+        //Por lo que no se pueden utilizar en otro metodo,
+        //a = 10;
+        System.out.println("Otro metodo");
     }
 }
