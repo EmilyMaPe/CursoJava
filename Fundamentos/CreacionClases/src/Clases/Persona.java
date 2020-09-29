@@ -10,8 +10,8 @@ Metodos: desplegar Informacion
 */
 public class Persona {
     //Atributos de la clase
-    String nombre;
-    String apellido;
+    public String nombre;
+    public String apellido;
     
     //Metodos de la clase
     //public quiere decir que lo podemos usar dentro y fuera de la clase
