@@ -14,7 +14,7 @@ public class PasoPorReferencia {
         System.out.println("persona1 cambio de nombre: " + persona1.nombre);
     }
     //persona recibira la referencia por lo que estaran apuntando al 
-    //mismo objeto
+    //mismo objeto, por lo que los cambios se veran reflejados en persona1
     public static void cambiarValor(Persona persona){
         persona.nombre = "Karla";
     }
