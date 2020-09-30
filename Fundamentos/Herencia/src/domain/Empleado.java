@@ -8,14 +8,23 @@ public class Empleado extends Persona{
     private int idEmpleado;
     private double sueldo;
     private static int contadorEmpleado;
-
+    
+    public Empleado(){
+        //Aqui hay una llamada implicita al contructor vacio de la clase Persona
+        //super();
+        this.idEmpleado = ++Empleado.contadorEmpleado;
+    }
 
     public Empleado(String nombre, double sueldo) {
         //Los constructores no se heredan
         //Pero se puedo hacer uso con la palabra reservada super
         //Y los argumentos del constructor que queremos heredar
-        super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleado;
+        //super(nombre);
+        //Si llamamos a this ya no podemos udar super
+        //Llama al constructor vacio de esta clase Empleado
+        this();
+        //Accedemos ala tributo nombre por que es de tipo protected en Persona
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
