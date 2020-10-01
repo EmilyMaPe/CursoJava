@@ -11,7 +11,7 @@ Una vez creado el proyecto --> Click derecho sobre el nombre del proyecto --> Cl
 
 Vamos a project Files --> pom.xml
 --> Al terminar la etiqueta de properties y antes del cierre de la etiqueta project
-
+'''
 <dependencies>
 	<dependency>
 		<groupId>mysql</groupId>
@@ -19,7 +19,7 @@ Vamos a project Files --> pom.xml
 		<version>8.0.21</version>
 	</dependency>
 </dependencies>
-
+'''
 Una vez hecho esto click derecho nombre del proyecto --> Clean and Build
 
 Para verificar que se ejecuto correctamente en la carpeta de dependencias de nuestro
