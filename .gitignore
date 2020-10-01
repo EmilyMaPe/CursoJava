@@ -2,3 +2,4 @@
 \nbproject
 *.xml
 *.mf
+/JDBC/IntroduccionJDBC/target/
