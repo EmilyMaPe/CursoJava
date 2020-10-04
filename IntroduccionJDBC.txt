@@ -22,3 +22,10 @@ proyecto deberiamos ver
 
 mysql-connector-java-8.8.21.jar
 
+
+Creamos la clase de conexion en el paquete de datos --> los datos para la conexion a la BD y los metodos de cierre de conexiones
+Creamos las clases de instancia en el paquete de domain--> relacionadas con las tablas que tenemos en la base de datos
+Creamos las clases DAO en el paquete de datos --> Sentencias DML, para cada clase de instancia tendremos una clase DAO
+							(SELECT, INSERT, UPDATE, DELETE)
+
+Ya podemos probar nuestro proyecto con las clases de Test

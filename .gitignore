@@ -3,3 +3,5 @@
 *.xml
 *.mf
 /JDBC/IntroduccionJDBC/target/
+/JDBC/ManejoJDBC/target/
+/JDBC/LaboratorioJDBC/target/
