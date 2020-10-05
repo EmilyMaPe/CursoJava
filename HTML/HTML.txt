@@ -1,0 +1,15 @@
+HTML
+
+File --> New Proyect --> HTML5/JavaScript --> HTML5/JS Application
+Damos el nombre del proyecto y la ruta donde se guardara --> Next
+
+Dejaremos marcadas las opciones por default --> Next
+Deseleccionamos todas las opciones --> Finish
+
+Componentes de un URL
+
+scheme: --> //host --> :port --> /path --> :parameters --> ?query --> #ancla
+
+ancla --> referencia a alguna parte de la pagina HTML
+
+http://localhost:8383/HolaMundoHTML/subcarpeta/index.html#ancla
