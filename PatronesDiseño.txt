@@ -1,0 +1,74 @@
+Buenas Practicas y Patrones de Diseño
+
+Capa de Presentacion
+	Administra el flujo y presentacion de las pantallas del sistema
+	Flujo entre las distintas pantallas del sistema
+	Procesar los datos del usuario atraves de formularios y desplegar info al usuario
+
+Capa de Negocio
+	Procesar la logica del negocio y/o servicios del sistema
+
+Capa de Datos
+	Obtiene y guarda informacion de las fuentes de datos, como son, una BD, archivos,etc 
+
+Cohesion y acoplamiento
+
+el objetivo del diseño es minimizar costos de desarrollo
+
+Cohesion -> es la medida en la que un componente de software se dedica a rehalizar solo la
+	 tarea 	para la cual fue creado, delegando las tareas complementarias a otros 
+	componentes.
+
+Acoplamineto -> es la medida en que los cambios de un componente tiende a necesitar 
+	cambios de otro componete. Mide el grado de dependencia entre 2 o mas elementos.
+
+El objetivo del diseño de software es tener una alta cohesion y un bajo acoplamineto entre 
+sus componentes de software. 
+
+Ejemplo de alta cohesion
+
+--> Componente de impresion 
+	--> Componente de presentacion
+	--> Compoennte de datos
+	--> Componente de formato
+
+Debemos tener cuidado en que los codigos no sean demasiado grandes ni demasiado pequeños
+
+Ejemplo de bajo acomplamiento
+
+componente servicio -> Componente de datos -> Conexion a bd
+
+Al no tener relacion con el servicio y la bd obtenemos bajo acoplamiento al no tener
+mas relaciones de las necesarias.
+Uno de los objetivos del diseño de software es hacer componentes reutilizables por lo que 
+entre mayor dependencia exista entre cada componente mas dificil va a ser tomar un modulo
+y adecuarlo para reutilizarlo en otra aplicacion.
+
+
+Patrones de diseño --> Un patron de diseño es una guia que puede involucrar varias clases
+	y nos permite resolver un problema que se presenta de manera repetitiva.
+
+Cada capa puede tener diferentes patrones de diseño 
+
+Capa de presentacion:
+	* Patron MVC Modelo Vista Controlador: dividir responsabilidades
+	* Front Controller: Generar entrada unica a una aplicacion cuando el usuario
+		hace una peticion
+	* DTO Data Transfer Object: Objeto del dominio del problema, una clase de entidad
+		una clase que persiste en una base de datos, se utiliza para transferir
+		una entidad o una lista de entidades entre las distintas capas de la
+		aplicacion. 
+
+Capa de Servicio:
+	* Business Delegate: Se encarga de los detalles de llamar a algun metodo de servicio
+	* Service Locator: Se utiliza por Business delegate para localizar los servicios en
+		algun directorio de serivicios
+	* DTO
+
+Capa de datos
+	* DAO Data Access Object: se encarga de extraer y almacenar informacion en la BD
+	* DTO
+
+
+Es recomendable hacer uso de al menos estas 3 capas para que el cambio y mantenimiento
+de nuestras aplicaciones sea mas facil de realizar.
