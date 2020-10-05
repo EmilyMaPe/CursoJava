@@ -1,0 +1,40 @@
+Pool de conexiones
+
+Nos apoyaremos de la libreria Apache Commons
+
+Abrimos el archivo pom.xml
+
+Pondremos dentro de la etiqueta dependencies el siguiente codigo
+
+<dependency>
+	<groupId>org.apache.commons</groupId>
+	<artifactId>commons-dbcp2</artifactId>
+	<version>2.7.0</version>
+</dependency>
+
+
+--> Clean and Build el proyectp para descargar la libreria
+Ahora podremos verlo en el folder de dependencies
+
+Ahora vamos al archivo de conexion dentro del paquete de datos
+
+en lugar de usar el DriverManager
+Crearemos un metodo que se encargara de inicializar el objet de pool de conexiones
+Y con este metodo podremos solicitar una nueva conexion a la BD
+
+
+private static BasicDataSource dataSource;
+
+public static DataSource getDataSource() {
+	if (dataSource == null) {
+		dataSource = new BasicDataSource();
+		dataSource.setUrl(JDBC_URL);
+		dataSource.setUsername(JDBC_USER);
+		dataSource.setPassword(JDBC_PASSWORD);	
+		//Numero de conexiones a la BD en este caso seran 5	
+		dataSource.setInitialSize(5);
+        }
+        return dataSource;
+}
+
+Cambiamos el DriverManager --> getDataSource().getConnection();
