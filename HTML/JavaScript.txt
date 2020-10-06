@@ -1,0 +1,39 @@
+JS permite agregar codigo dinamico a una página HTML.
+Es un lenguaje de tipo scripty, es decir se ejecuta en tiempo de ejecucion, y cualquier
+cambio se ve reflejado de manera inmediata al recargar la pagina.
+
+Permite:
+* Crear interfaces HTML interactivas
+* Validar formularios HTML
+* Controlar los navegadoers WEB
+* Crear HTML dinamico al vuelo
+
+JavaScript en una aplicacion Java Empresarial:
+
+Capa de Presentacion
+- HTML
+- JavaScript
+- CSS
+
+Capa Web
+- JSP's
+- Servlets
+- Struts
+- JSF
+
+Capa de Negocio
+- EJB's de sesión
+- Spring
+
+Capa de Datos
+- JDBC
+- EJB's de Entidad
+- JPA
+- Hibernate
+
+JavaScript tiene la funcionalidad de manipular los elementos HTML desde las funciones
+de JavaScript.
+JavaScript es case sensitive
+
+RollOver JavaScript
+Cuando nos posiciones sobre una imagen haremos un cambio de imagen
