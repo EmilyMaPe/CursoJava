@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio Frames</title>
+    </head>
+    <!--Frame Externo-->
+    <!--Creamos un frame externo de dos columnas-->
+    <!-- cols="la primera columna ocupara el 25% del espacio disponible,
+    La segunda ocupara el espacio restante-->
+    <frameset cols="25%,*" frameborder="0" framespacing="0" border="0">
+        <!--Frame Izquierda-->
+        <frame src="navegacion.html" name="navegacion"/>
+        <!--Frame derecha -> Tiene dos renglones-->
+        <frameset rows="30%,*">
+            <!--Frame superior-->
+            <frame src="titulo.html" scrolling="no"/>
+            <!--Frame Inferior-->
+            <frame src="ContenidoInicial.html" name="contenido"/>
+        </frameset>
+        <noframes>
+            Este es una pagina que no pudo mostrar los frames
+        </noframes>
+    </frameset>
+</html>
+
+
+
