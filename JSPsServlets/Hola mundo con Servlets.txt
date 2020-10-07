@@ -1,0 +1,32 @@
+hola mundo con servlets
+new proyect --> java with maven --> web aplplication
+
+name: HolaMundoServlets
+proyecto: vacio
+
+next --> seleccionamos el servidos que creamos --> finish
+
+Nombre proyecto --> properties --> cambiar nombre y quitar numero de version
+
+nombre proyecto --> clean and build
+
+
+*****El unico jdk que soporta glassfish es el 1.8
+
+sobre source packages --> eliminar paquetes que haya
+sources packages --> new --> java class --> nombre: HolaMundo --> paquete: web
+
+la clase --> extends HttpServlet --> importar clase
+
+para poder reconocerlo desde el navegador y poder reconocerlo:
+arriba del nombre de la clase:
+@WebServlet("/HolaMundo") --> NO tiene que ser igual que el nombre de la clase
+--> importamos la notacion
+
+Hasta aqui ya configuramos el servlet para que lo podamos acceder desde el navegador
+
+Sin embargo, tenemos que indicar cual es el metodo que va a procesar este servlet
+
+Si hacemos una llamada desde el navegador se conoce como peticion GET
+Si por ejemplo usamos un formulario normalmnete se usara la peticion POST
+

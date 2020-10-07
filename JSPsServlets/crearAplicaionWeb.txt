@@ -1,0 +1,18 @@
+Hola mundo con glassfosh
+
+new proyect --> java with maven --> web aplication --> next
+nombre --> HolaMundoJavaWeb
+
+no dar nombre de paquete
+
+-->next --> finish
+
+Una vez que termina de cargar el proyecto
+click derecho --> properties --> cambiar el nombre de proyecto solo a 
+--> HolaMundoJavaWeb --> ok
+
+Por default crea un index.html en el folder web pages
+cambiar el h1 por Hola Mundo Java Web --> click derecho al proyecto --> run
+
+para detener glashfish --> services --> servers
+--> GlshFish Server --> click derecho --> stop

@@ -1,0 +1,65 @@
+Una aplicacion WEB tiene como objetivo procesar una peticion de un cliente, y una vez que es
+procesada el resultado se muestra al cliente que solicito dicha informacion.
+
+Arquitectura con una aplicacion web con java:
+
+Capa de cliente:	
+	HTML, CSS, JS
+
+
+hTTP --> capa Web - Capa negocio - capa datos
+
+capa web:
+	JSP's
+	Servlets
+
+Capa Negocio:
+	Objetos de negocio
+
+Capa Datos
+	Objetos Entidad
+
+
+Proceso de una peticion http
+
+cliente  --> http request --> Servidor Web
+
+Cliente <-- http response <-- Servidor Web
+
+Cliente: clientes con navegadores web
+servidor web: aplicacion web
+
+Instalar servidor de glassfish
+download glassfish --> glassfish 5.0 full platform
+descomprimir archivo en cd  con nombre appservers
+
+copiamos la ruta donde estan las carpetas
+
+C:\AppServers\glassfish-5.0.1\glassfish5
+ y abrimos apache netbeans
+
+services --> servers --> click derecho --> add server --> glassfish server --> next  -->
+--> ponemos la ruta copiada --> next --> finish
+
+Services --> Servers --> GlashFish Server --> click derecho --> start --> 
+nos pide el jdk
+download jdk 8 --> abrir wizard --> next --> next --> abre ventana --> next --> close
+
+
+
+
+regresamos a netbeans
+
+Services --> Servers --> GlashFish Server --> click derecho --> start --> manage platforms
+--> add platform --> seleccionamos java standard edition --> next --> buscamos ruta
+--> program files --> java --> seleccionamos jdk1.8.0 --> next --> finish --> close --> ok
+--> allow access --> y ya esta corriendo nuestro servidor
+
+
+vamos a entrar a la consola de administracion de glashfish
+services --> servers --> glashfish server --> click derecho --> view domain admin console
+
+podemos entrar a localhost:8080 para ver que nuestro servidor esta corriendo
+
+
+Para detenerlo --> click derecho --> stop
